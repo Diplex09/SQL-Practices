@@ -122,10 +122,10 @@ WHERE activities LIKE '%Meat Processing%';
 SELECT * FROM meat_poultry_egg_establishments LIMIT(100);
 
 -- 19. Start transaction.
--- Data consistency is really important among modern databases systems. This can be achieved using TRANSACTIONS.
--- If something fails inside a transaction, we can rollback. This will not save the changes.
+-- Data consistency is really important among modern databases systems. This can be achieved using TRANSACTIONS
+-- If something fails inside a transaction, we can rollback. This will not save the changes
 -- To save them, call 'commit;'
--- Use transaction everytime you're updating your data.
+-- Use transaction everytime you're updating your data
 start transaction 
 
 update meat_poultry_egg_establishments
