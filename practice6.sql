@@ -29,5 +29,5 @@ WHERE street = '52 STREET';
 EXPLAIN ANALYZE SELECT * FROM new_york_addresses
 WHERE street = 'ZWICKY AVENUE';
 
--- 4. Creating a B-tree index on the new_york_addresses table
+-- 4. Create a B-tree index on the new_york_addresses table
 CREATE INDEX street_idx ON new_york_addresses (street);
